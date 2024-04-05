@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Video</title>
+    <style>
+      body {
+        color: white;
+        margin: 0px;
+        padding: 0px;
+      }
+      header.feature-box.top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        height: 120px;
+        padding: 5px;
+        /* text-align:right; */
+      }
+      header.feature-box.second {
+        background-color: blue;
+        height: 50px;
+        text-align: center;
+        margin-top: -25px;
+      }
+      ul {
+        list-style: none;
+        padding: 0px;
+      }
+      li {
+        display: inline-block;
+        background-color: gray;
+        border-radius: 10px;
+        padding: 10px;
+        margin: 10px;
+      }
+      li a {
+        text-decoration: none;
+        color: white;
+      }
+      li:hover {
+        background-color: red;
+        margin: 10px;
+      }
+      .features {
+        background-color: black;
+        width: 900px;
+        height: 700px;
+        border-radius: 35px;
+        object-fit: contain;
+        margin: 20px;
+      }
+      section.col-sm {
+        background-color: black;
+        width: 1000px;
+        height: 650px;
+        border-radius: 35px;
+        object-fit: contain;
+        margin: 40px;
+      }
+
+      img {
+        width: 900px;
+        height: 600px;
+        border-radius: 35px;
+        object-fit: contain;
+        margin: 40px;
+      }
+
+      .new {
+        color: black;
+        margin: 0px;
+        padding: 10px;
+        background-color: green;
+        margin: 0px;
+        margin-top: -10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="feature-box top">
+      <h1><strong>Text Detection using EasyOCR</strong></h1>
+      <ul>
+        <li><a href="/home">Home</a></li>
+      </ul>
+    </header>
+    <header class="feature-box second">
+      <h1><strong>Output Video</strong></h1>
+    </header>
+
+    <section class="col-sm">
+      <img src="{{ url_for('webapp_text') }}" alt="Upload video" />
+    </section>
+  </body>
+</html>

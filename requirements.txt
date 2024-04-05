@@ -1,0 +1,9 @@
+cv2
+numpy
+datetime
+random
+ultralytics
+joblib
+easyocr
+pandas
+scikit-learn
